@@ -1,0 +1,21 @@
+a=[3,4,10,2,1]
+n=len(a)
+profit=0
+profit_1=0
+buy=float('inf')
+for i in range(0,n-1):
+if(a[i]<buy):
+buy=a[i]
+index=i
+
+else:
+profit=a[i]-buy
+if(profit>profit_1):
+profit_1=profit
+x=index
+y=i
+
+
+print(f"the maximum profit that can be obtained is {profit_1}")
+print(f"The day to buy the stock is {x+1} day of the week")
+print(f"The day to sell the stock is {y+1} day of the week")

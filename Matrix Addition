@@ -1,0 +1,16 @@
+row,col=map(int,input().split())
+a=[list(map(int,input().split())) for _ in range(row)]
+b=[list(map(int,input().split())) for _ in range(row)]
+print('First Matrix: ')
+for i in a:
+    print(*i)
+print('Second Matrix: ')
+for i in b:
+    print(*i)
+
+print('Sum of the two matrices is: ')
+for i in range(row):
+    matrix_sum=[]
+    for j in range(col):
+        matrix_sum.append(a[i][j]+b[i][j])
+    print(*matrix_sum)

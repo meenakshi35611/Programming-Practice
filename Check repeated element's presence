@@ -1,0 +1,7 @@
+n=int(input())
+ele=list(map(int,input().split()))
+s_ele=set(ele)
+if len(set(ele))==len(ele):
+    print('false')
+else:
+    print('true')

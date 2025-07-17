@@ -1,0 +1,30 @@
+def findPair(num,target):
+  num.sort()
+  low,high=(0,len(num)-1)
+  while low<high:
+    if num[low]+num[high]==target:
+      print('Pair found', (num[high],num[low]))
+      return
+    elif num[low]+num[high]<target:
+      low+=1
+    else:
+      high-=1
+    
+  print('Pair not found')
+num=list(map(int,input().split()))
+target=int(input())
+findPair(num,target)
+
+'''
+def findPair(num,target):
+  for i in range(len(num)):
+    for j in range(i+1,len(num)):
+      if num[i]+num[j]==target:
+        print('Pair found',(num[i],num[j]))
+        return
+  print('Pair not found')
+
+num=list(map(int,input().split()))
+target=int(input())
+findPair(num,target)
+'''

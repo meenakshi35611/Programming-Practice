@@ -1,0 +1,35 @@
+import math
+import os
+import random
+import re
+import sys
+
+def plusMinus(arr):
+    n=len(arr)
+    pos=neg=z=0.0
+    
+    for i in arr:
+        if i>0:
+            pos+=1
+            
+        elif i<0:
+            neg+=1
+            
+        elif i==0:
+            z+=1
+           
+    pos=round(pos/n,6)
+    neg=round(neg/n,6)
+    z=round(z/n,6)
+    print(pos)
+    print(neg)
+    print(z)
+    
+            
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    arr = list(map(int, input().rstrip().split()))
+
+    plusMinus(arr)

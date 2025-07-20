@@ -19,11 +19,20 @@ This is a collection of basic Python programs I wrote as part of my **programmin
 5. **📈 Max Profit in Share Market**  
    Given a list of stock prices over a week, finds the maximum possible profit by choosing a single buy and sell day.
 
-6. **📉 Descending Sort**  
+6. **➕ Mini-Max Sum**
+   Finds the minimum and maximum sums of 4 out of 5 integers in a list.
+
+7. **➗ Ratio of Positive, Negative, and Zero**
+   Prints the ratio of positives, negatives, and zeros in a list (6 decimal places). 
+
+8. **📉 Descending Sort**  
    Sorts a list or array in descending order.
 
-7. **🔢 Sum of Two Highest Numbers**  
+9. **🔢 Sum of Two Highest Numbers**  
    Finds the two largest numbers in a list and returns their sum.
+
+10. **⏰ Time Conversion**
+    Converts a time string from 12-hour AM/PM format to 24-hour format.
 
 ## 📚 Purpose
 

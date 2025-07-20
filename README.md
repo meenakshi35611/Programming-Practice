@@ -10,7 +10,7 @@ This is a collection of basic Python programs I wrote as part of my **programmin
 2. **🧮 Factorial Calculation**  
    Calculates the factorial of a given number using loop or recursion.
 
-3. **🔎 Finding Pair with Given Sum in the Array** 
+3. **🔎 Finding Pair with Given Sum in the Array**  
    Checks whether there exists a pair of numbers in a given list that adds up to a specified target value.
    
 4. **➕ Matrix Addition**  

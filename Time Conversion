@@ -8,18 +8,18 @@ def timeConversion(s):
     conv=int(s[:2])
     for i in s:
         if s[-2]=="P":
-            if s[:2]=="12":
-                if s[4:6] or s[7:9]!="00":
+            if s[:2]!="12":
                     conv+=12
                     s=str(conv)+s[2:-2]  
             else:
-                conv+=12
-                s=str(conv)+s[2:-2]
+                s=s[:-2]
                   
         elif s[-2]=="A":
             if conv==12:
                 s="00"+s[2:-2]
-    return s[:-2]
+            else:
+                s=s[:-2]
+    return s
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 

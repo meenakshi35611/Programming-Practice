@@ -1,0 +1,20 @@
+import math
+import os
+import random
+import re
+import sys
+
+def miniMaxSum(arr):
+    sum_total=sum(arr)
+    maxi=float('-inf')
+    mini=float('inf')
+    for i in arr:
+        minus_sum=sum_total-i
+        maxi=max(maxi,minus_sum)
+        mini=min(mini,minus_sum)
+    print(mini, maxi)
+if __name__ == '__main__':
+
+    arr = list(map(int, input().rstrip().split()))
+
+    miniMaxSum(arr)

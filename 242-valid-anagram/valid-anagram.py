@@ -1,4 +1,4 @@
-class Solution(object):
+'''class Solution(object):
     def isAnagram(self, s, t):
         count1={}
         count2={}
@@ -8,6 +8,15 @@ class Solution(object):
             count2[i]=count2.get(i, 0)+1
         if count1==count2:
             return True
-        return False
+        return False'''
+class Solution(object):
+    def isAnagram(self, s, t):
+        if len(s)!=len(t):
+            return False
+        for i in s:
+            if s.count(i)!=t.count(i):
+                return False
+        return True
+
         
         

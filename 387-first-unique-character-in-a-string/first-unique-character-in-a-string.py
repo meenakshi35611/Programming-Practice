@@ -4,9 +4,10 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
+        a=set()
         for i in range(len(s)):
-            if s[i]  not in s[:i]:
-                if s.count(s[i])==1:
+                if s[i] not in a and s.count(s[i])==1:
                     return i
+                a.add(s[i])
         return -1
         
